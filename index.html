@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -16,25 +16,134 @@
       rel="stylesheet"
     />
     <link href="./styles.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
   </head>
+
   <body>
     <div class="background"></div>
-    <nav class="navbar">
-      <img class="navbar-logo" src="./assets/logo2.png" />
-      <input type="text" placeholder="Pesquisar" class="navbar-search" />
-    </nav>
-    <button class="navbar-burger" onclick="toggleMenu()"></button>
-    <nav class="menu">
-      <a href="#" style="animation-delay: 0.1s">Home</a>
-      <a href="#" style="animation-delay: 0.2s">About</a>
-      <a href="#" style="animation-delay: 0.3s">Services</a>
-      <a href="#" style="animation-delay: 0.4s">Products</a>
-      <a href="#" style="animation-delay: 0.5s">Contact</a>
-    </nav>
-    <script type="text/javascript">
-      const toggleMenu = () => {
-        document.body.classList.toggle("open");
-      };
+    <header>
+      <div class="logo-bar">
+        <a href="#"><img class="logo" src="./assets/logo.png" /></a>
+      </div>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img id="carrossel-1" src="assets/carousel/2.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img id="carrossel-1" src="assets/carousel/3.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img id="carrossel-1" src="assets/carousel/4.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img id="carrossel-1" src="assets/carousel/5.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img id="carrossel-1" src="assets/carousel/6.jpg" />
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </header>
+
+    <section class="descricao-site">DESCRIÇÃO DO SITE AQUI</section>
+    <section class="categorias">CATEGORIAS DOS RESTAURANTES AQUI</section>
+    <section class="mapa">
+      <h1>Encontre os melhores lugares para comer e beber em Nova Iguaçu</h1>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d8750.885514012614!2d-43.47820394271289!3d-22.75446329354648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1srestaurantes%20nova%20igua%C3%A7u!5e0!3m2!1spt-BR!2sbr!4v1678669229843!5m2!1spt-BR!2sbr"
+        width="900"
+        height="200"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
+    <section class="restaurantes">
+      <article class="restaurantes-lista">
+        <div class="restaurantes-categoria">
+          <h1>Bares</h1>
+        </div>
+        <div class="cards">
+          <div class="card">CARD DE BAR AQUI</div>
+          <div class="card">CARD DE BAR AQUI</div>
+          <div class="card">CARD DE BAR AQUI</div>
+          <div class="card">CARD DE BAR AQUI</div>
+        </div>
+      </article>
+      <article class="restaurantes-lista">
+        <div class="restaurantes-categoria">
+          <h1>Pizzarias</h1>
+        </div>
+        <div class="cards">
+          <div class="card">CARD DE PIZZARIA AQUI</div>
+          <div class="card">CARD DE PIZZARIA AQUI</div>
+          <div class="card">CARD DE PIZZARIA AQUI</div>
+          <div class="card">CARD DE PIZZARIA AQUI</div>
+        </div>
+      </article>
+
+      <article class="restaurantes-lista">
+        <div class="restaurantes-categoria">
+          <h1>cafeterias</h1>
+        </div>
+        <div class="cards">
+          <div class="card">CARD DE CAFETERIA AQUI</div>
+          <div class="card">CARD DE CAFETERIA AQUI</div>
+          <div class="card">CARD DE CAFETERIA AQUI</div>
+          <div class="card">CARD DE CAFETERIA AQUI</div>
+        </div>
+      </article>
+      <article class="restaurantes-lista">
+        <div class="restaurantes-categoria">
+          <h1>Hamburguerias</h1>
+        </div>
+        <div class="cards">
+          <div class="card">CARD DE HAMBURGUERIA AQUI</div>
+          <div class="card">CARD DE HAMBURGUERIA AQUI</div>
+          <div class="card">CARD DE HAMBURGUERIA AQUI</div>
+          <div class="card">CARD DE HAMBURGUERIA AQUI</div>
+        </div>
+      </article>
+      <article class="restaurantes-lista">
+        <div class="restaurantes-categoria">
+          <h1>RESTAURANTES</h1>
+        </div>
+        <div class="cards">
+          <div class="card">CARD DE RESTAURANTE AQUI</div>
+          <div class="card">CARD DE RESTAURANTE AQUI</div>
+          <div class="card">CARD DE RESTAURANTE AQUI</div>
+          <div class="card">CARD DE RESTAURANTE AQUI</div>
+        </div>
+      </article>
+    </section>
+    <footer>RODAPÉ AQUI</footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
     </script>
   </body>
 </html>
