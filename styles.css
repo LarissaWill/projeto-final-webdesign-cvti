@@ -62,9 +62,18 @@ header {
   height: 100px;
 }
 .categorias {
-  background-color: chocolate;
+  background-color: #eae2b7;
+  display: flex;
+  justify-content: center;
   width: 100%;
-  height: 100px;
+  padding: 10px 0;
+}
+.categorias a img {
+  margin: 0 10px;
+}
+.categorias a img {
+  border-radius: 50%;
+  width: 10rem;
 }
 .mapa {
   background-color: aqua;

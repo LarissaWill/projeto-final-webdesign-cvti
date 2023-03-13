@@ -53,7 +53,24 @@
     </header>
 
     <section class="descricao-site">DESCRIÇÃO DO SITE AQUI</section>
-    <section class="categorias">CATEGORIAS DOS RESTAURANTES AQUI</section>
+    <section class="categorias">
+      <a href="#categoria-restaurante"
+        ><img src="assets/categorias/categoria1.png"
+      /></a>
+      <a href="#categoria-bar"
+        ><img src="assets/categorias/categoria2.png"
+      /></a>
+      <a href="#categoria-cafeteria"
+        ><img src="assets/categorias/categoria3.png"
+      /></a>
+      <a href="#categoria-hamburgueria"
+        ><img src="assets/categorias/categoria4.png"
+      /></a>
+      <a href="#categoria-pizzaria"
+        ><img src="assets/categorias/categoria5.png"
+      /></a>
+    </section>
+
     <section class="mapa">
       <h1>Encontre os melhores lugares para comer e beber em Nova Iguaçu</h1>
       <iframe
@@ -67,52 +84,7 @@
       ></iframe>
     </section>
     <section class="restaurantes">
-      <article class="restaurantes-lista">
-        <div class="restaurantes-categoria">
-          <h1>Bares</h1>
-        </div>
-        <div class="cards">
-          <div class="card">CARD DE BAR AQUI TESTE</div>
-          <div class="card">CARD DE BAR AQUI</div>
-          <div class="card">CARD DE BAR AQUI</div>
-          <div class="card">CARD DE BAR AQUI</div>
-        </div>
-      </article>
-      <article class="restaurantes-lista">
-        <div class="restaurantes-categoria">
-          <h1>Pizzarias</h1>
-        </div>
-        <div class="cards">
-          <div class="card">CARD DE PIZZARIA AQUI</div>
-          <div class="card">CARD DE PIZZARIA AQUI</div>
-          <div class="card">CARD DE PIZZARIA AQUI</div>
-          <div class="card">CARD DE PIZZARIA AQUI</div>
-        </div>
-      </article>
-
-      <article class="restaurantes-lista">
-        <div class="restaurantes-categoria">
-          <h1>cafeterias</h1>
-        </div>
-        <div class="cards">
-          <div class="card">CARD DE CAFETERIA AQUI</div>
-          <div class="card">CARD DE CAFETERIA AQUI</div>
-          <div class="card">CARD DE CAFETERIA AQUI</div>
-          <div class="card">CARD DE CAFETERIA AQUI</div>
-        </div>
-      </article>
-      <article class="restaurantes-lista">
-        <div class="restaurantes-categoria">
-          <h1>Hamburguerias</h1>
-        </div>
-        <div class="cards">
-          <div class="card">CARD DE HAMBURGUERIA AQUI</div>
-          <div class="card">CARD DE HAMBURGUERIA AQUI</div>
-          <div class="card">CARD DE HAMBURGUERIA AQUI</div>
-          <div class="card">CARD DE HAMBURGUERIA AQUI</div>
-        </div>
-      </article>
-      <article class="restaurantes-lista">
+      <article id="categoria-restaurante" class="restaurantes-lista">
         <div class="restaurantes-categoria">
           <h1>RESTAURANTES</h1>
         </div>
@@ -123,9 +95,53 @@
           <div class="card">CARD DE RESTAURANTE AQUI</div>
         </div>
       </article>
+      <article id="categoria-bar" class="restaurantes-lista">
+        <div class="restaurantes-categoria">
+          <h1>Bares</h1>
+        </div>
+        <div class="cards">
+          <div class="card">CARD DE BAR AQUI TESTE</div>
+          <div class="card">CARD DE BAR AQUI</div>
+          <div class="card">CARD DE BAR AQUI</div>
+          <div class="card">CARD DE BAR AQUI</div>
+        </div>
+      </article>
+      <article id="categoria-cafeteria" class="restaurantes-lista">
+        <div class="restaurantes-categoria">
+          <h1>cafeterias</h1>
+        </div>
+        <div class="cards">
+          <div class="card">CARD DE CAFETERIA AQUI</div>
+          <div class="card">CARD DE CAFETERIA AQUI</div>
+          <div class="card">CARD DE CAFETERIA AQUI</div>
+          <div class="card">CARD DE CAFETERIA AQUI</div>
+        </div>
+      </article>
+      <article id="categoria-hamburgueria" class="restaurantes-lista">
+        <div class="restaurantes-categoria">
+          <h1>Hamburguerias</h1>
+        </div>
+        <div class="cards">
+          <div class="card">CARD DE HAMBURGUERIA AQUI</div>
+          <div class="card">CARD DE HAMBURGUERIA AQUI</div>
+          <div class="card">CARD DE HAMBURGUERIA AQUI</div>
+          <div class="card">CARD DE HAMBURGUERIA AQUI</div>
+        </div>
+      </article>
+      <article id="categoria-pizzaria" class="restaurantes-lista">
+        <div class="restaurantes-categoria">
+          <h1>Pizzarias</h1>
+        </div>
+        <div class="cards">
+          <div class="card">CARD DE PIZZARIA AQUI</div>
+          <div class="card">CARD DE PIZZARIA AQUI</div>
+          <div class="card">CARD DE PIZZARIA AQUI</div>
+          <div class="card">CARD DE PIZZARIA AQUI</div>
+        </div>
+      </article>
     </section>
     <footer>RODAPÉ AQUI</footer>
-    
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script>
       var swiper = new Swiper(".mySwiper", {
